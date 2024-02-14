@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-19T09:33:03.678202" rpa="false" schemaversion="5">
+<suite id="s1" name="Create" source="C:\Users\formation\Desktop\lumo_robot\robot\create.robot">
+<test id="s1-t1" name="Lumo Test" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-19T09:33:03.864461" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T09:33:03.864461" elapsed="5.824657"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:33:09.693118" level="INFO">Clicking element 'link=Sign In'.</msg>
+<msg time="2024-01-19T09:33:09.912267" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-19T09:33:09.913265" level="FAIL">Element with locator 'link=Sign In' not found.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-19T09:33:09.692119" elapsed="0.299750">Element with locator 'link=Sign In' not found.</status>
+</kw>
+<arg>link=Sign In</arg>
+<status status="FAIL" start="2024-01-19T09:33:09.691120" elapsed="0.300749">Element with locator 'link=Sign In' not found.</status>
+</kw>
+<kw name="open">
+<arg>https://magento.softwaretestingboard.com/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLnNvZnR3YXJldGVzdGluZ2JvYXJkLmNvbS8_cmVmPWhhY2tlcm5vb24uY29t/</arg>
+<status status="NOT RUN" start="2024-01-19T09:33:09.992939" elapsed="0.000000"/>
+</kw>
+<kw name="click">
+<arg>id=email</arg>
+<status status="NOT RUN" start="2024-01-19T09:33:09.993425" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>Lilou@exemple.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-19T09:33:09.994434" elapsed="0.000000"/>
+</kw>
+<kw name="click">
+<arg>id=pass</arg>
+<status status="NOT RUN" start="2024-01-19T09:33:09.994434" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=pass</arg>
+<arg>Lilou1502.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-19T09:33:09.995437" elapsed="0.000000"/>
+</kw>
+<kw name="click">
+<arg>xpath=//button[@id='send2']/span</arg>
+<status status="NOT RUN" start="2024-01-19T09:33:09.996436" elapsed="0.000000"/>
+</kw>
+<kw name="open">
+<arg>https://magento.softwaretestingboard.com/customer/account/index/</arg>
+<status status="NOT RUN" start="2024-01-19T09:33:09.997435" elapsed="0.000000"/>
+</kw>
+<kw name="click">
+<arg>xpath=//header/div/div</arg>
+<status status="NOT RUN" start="2024-01-19T09:33:09.998434" elapsed="0.000000"/>
+</kw>
+<kw name="click">
+<arg>xpath=//button[@type='button']</arg>
+<status status="NOT RUN" start="2024-01-19T09:33:09.999434" elapsed="0.000000"/>
+</kw>
+<kw name="click">
+<arg>link=Sign Out</arg>
+<status status="NOT RUN" start="2024-01-19T09:33:09.999434" elapsed="0.000000"/>
+</kw>
+<kw name="open">
+<arg>https://magento.softwaretestingboard.com/customer/account/logoutSuccess/</arg>
+<status status="NOT RUN" start="2024-01-19T09:33:10.000437" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-19T09:33:10.001438" elapsed="2.445867"/>
+</kw>
+<status status="FAIL" start="2024-01-19T09:33:03.863409" elapsed="8.584821">Element with locator 'link=Sign In' not found.</status>
+</test>
+<status status="FAIL" start="2024-01-19T09:33:03.681287" elapsed="8.770938"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Create">Create</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

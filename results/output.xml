@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-19T11:59:32.219418" rpa="false" schemaversion="5">
+<suite id="s1" name="Lumo Robot" source="C:\Users\formation\Desktop\lumo_robot">
+<suite id="s1-s1" name="Robot" source="C:\Users\formation\Desktop\lumo_robot\robot">
+<suite id="s1-s1-s1" name="Create" source="C:\Users\formation\Desktop\lumo_robot\robot\create.robot">
+<test id="s1-s1-s1-t1" name="Create" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-19T11:59:32.522932" level="INFO">Opening browser 'chrome' to base url 'https://magento.softwaretestingboard.com/?ref=hackernoon.com'.</msg>
+<arg>https://magento.softwaretestingboard.com/?ref=hackernoon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T11:59:32.522932" elapsed="5.411733"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-19T11:59:37.935661" elapsed="0.126603"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T11:59:38.065101" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T11:59:38.064083" elapsed="3.460263"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-01-19T11:59:41.525878" level="INFO">Opening url 'https://magento.softwaretestingboard.com/?ref=hackernoon.com'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-01-19T11:59:41.525356" elapsed="2.471683"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-01-19T11:59:43.997890" level="INFO">Clicking link 'Create an Account'.</msg>
+<arg>Create an Account</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T11:59:43.997039" elapsed="1.669071"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-01-19T11:59:45.668266" level="INFO">Opening url 'https://magento.softwaretestingboard.com/customer/account/create/'</msg>
+<arg>${NEW_ACCOUNT_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-01-19T11:59:45.667117" elapsed="1.365569"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T11:59:47.033687" level="INFO">Typing text 'Sonny' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>${USER_FIRST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T11:59:47.033687" elapsed="0.127573"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T11:59:47.161260" level="INFO">Typing text 'Melissa' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>${USER_LAST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T11:59:47.161260" elapsed="0.084773"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T11:59:47.247492" level="INFO">Typing text 'sonny@exemple.com' into text field 'id=email_address'.</msg>
+<arg>id=email_address</arg>
+<arg>${USER_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T11:59:47.246033" elapsed="0.076953"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T11:59:47.324820" level="INFO">Typing text 'Sonny1306.' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T11:59:47.323981" elapsed="0.098433"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T11:59:47.423412" level="INFO">Typing text 'Sonny1306.' into text field 'id=password-confirmation'.</msg>
+<arg>id=password-confirmation</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T11:59:47.422414" elapsed="0.083273"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T11:59:47.508828" level="INFO">Clicking button '//form[@id='form-validate']/div/div/button/span/font/font'.</msg>
+<msg time="2024-01-19T11:59:47.690719" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-19T11:59:47.690719" level="FAIL">Button with locator '//form[@id='form-validate']/div/div/button/span/font/font' not found.</msg>
+<arg>//form[@id='form-validate']/div/div/button/span/font/font</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-19T11:59:47.507701" elapsed="0.199606">Button with locator '//form[@id='form-validate']/div/div/button/span/font/font' not found.</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>https://magento.softwaretestingboard.com/customer/account/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2024-01-19T11:59:47.707307" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@type='button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-19T11:59:47.707307" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Ma liste d', "'", 'envies')])[1]/following::font[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-19T11:59:47.707307" elapsed="0.000000"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>https://magento.softwaretestingboard.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2024-01-19T11:59:47.707307" elapsed="0.000000"/>
+</kw>
+<kw name="Login">
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Test formule connexion</doc>
+<status status="NOT RUN" start="2024-01-19T11:59:47.707307" elapsed="0.000000"/>
+</kw>
+<kw name="Logout">
+<doc>Test de deconnexion</doc>
+<status status="NOT RUN" start="2024-01-19T11:59:47.707307" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-19T11:59:47.707307" elapsed="2.539214"/>
+</kw>
+<status status="FAIL" start="2024-01-19T11:59:32.506848" elapsed="17.739673">Button with locator '//form[@id='form-validate']/div/div/button/span/font/font' not found.</status>
+</test>
+<status status="FAIL" start="2024-01-19T11:59:32.245502" elapsed="18.001019"/>
+</suite>
+<status status="FAIL" start="2024-01-19T11:59:32.245502" elapsed="18.013361"/>
+</suite>
+<status status="FAIL" start="2024-01-19T11:59:32.223354" elapsed="18.039109"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Lumo Robot">Lumo Robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Robot">Lumo Robot.Robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Create">Lumo Robot.Robot.Create</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
